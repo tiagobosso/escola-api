@@ -8,7 +8,7 @@ export class AlunosController {
 
     }
     @Post()
-    @HttpCode(HttpStatus.CREATED) //retorna código 201 como dado criado ou inserido
+    @HttpCode(HttpStatus.CREATED)
     create(@Body()createAlunoDto:CreateAlunoDto){
         return this.alunosService.create(createAlunoDto);
     }
